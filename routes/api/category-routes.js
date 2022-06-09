@@ -19,6 +19,8 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+UPDATE 
+
 });
 
 router.delete('/:id', (req, res) => {

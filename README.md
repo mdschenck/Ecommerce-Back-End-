@@ -4,7 +4,7 @@ A SQL Based Employee Tracker using CLI Input, Node.js Express and Inquirer to ma
 
 # Description
 
-A sequelize ORM model database application that houses information on an ecommerce platfom, including category, product, and tag information and the relationships between the products. Implemented with Node.js and Express.js, Sequelize commands manipulating a MySQL database.
+A sequelize ORM model database application that houses information on an ecommerce platfom, including tables containing category, product, and tag information and the relationships between the tables. Implemented with Node.js and Express.js, Sequelize commands manipulating a MySQL database.
 
 # Screenshot of sequelize interface input & file structure:
 

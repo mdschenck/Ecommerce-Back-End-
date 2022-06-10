@@ -6,7 +6,11 @@ A SQL Based Employee Tracker using CLI Input, Node.js Express and Inquirer to ma
 
 # Screenshot of command line interface input example:
 
-![Screenshot  of command line interface input & file structure:](./assets/images/employee-tracker-screenshot.JPG)
+![Screenshot  of command line interface input & file structure:](./assets/images/ecommerce-backend-screenshot1.JPG)
+
+# Link to Screengrab video of application in operation:
+
+https://drive.google.com/file/d/1xVuXpTgZjEigsaAn4zQiqXePadHhY54f/view
 
 # Link to GitHub repository:
 

@@ -17,7 +17,7 @@ router.get("/:id", (req, res) => {
   Tag.findOne({
     // Gets the tag based on the isbn given in the request parameters
     where: {
-      tag_id: req.params.id,
+      id: req.params.id,
     },
   }).then((tagData) => {
     res.json(tagData);
@@ -48,7 +48,7 @@ router.put("/:id", (req, res) => {
     {
       // Gets the tag based on the tag_id given in the request parameters
       where: {
-        tag_id: req.params.id,
+        id: req.params.id,
       },
     }
   )
@@ -63,7 +63,7 @@ router.delete("/:id", (req, res) => {
   // delete on tag by its `id` value
   Tag.destroy({
     where: {
-      tag_id: req.params.id,
+      id: req.params.id,
     },
   })
     .then((deletedTag) => {

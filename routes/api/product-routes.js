@@ -19,7 +19,7 @@ router.get("/:id", (req, res) => {
   Product.findOne({
     // Gets the book based on the isbn given in the request parameters
     where: {
-      product_id: req.params.id,
+      id: req.params.id,
     },
   }).then((productData) => {
     res.json(productData);
@@ -48,7 +48,7 @@ router.post("/", (req, res) => {
         });
         return ProductTag.bulkCreate(productTagIdArr);
       }
-      if no product tags, just respond
+      // if no product tags, just respond
       res.status(200).json(product);
     })
     .then((productTagIds) => res.status(200).json(productTagIds))
@@ -63,7 +63,7 @@ router.put("/:id", (req, res) => {
   // update product data
   Product.update(req.body, {
     where: {
-      product_id: req.params.id,
+      id: req.params.id,
     },
   })
     .then((product) => {
@@ -104,7 +104,7 @@ router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
     where: {
-      product_id: req.params.id,
+      id: req.params.id,
     },
   })
     .then((deletedProduct) => {
